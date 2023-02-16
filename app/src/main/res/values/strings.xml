@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quizo Hub</string>
+    <string name="not_registered_sign_up">Not Registered ? Sign Up !</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="re_enter_your_password">Re-Enter Your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_registered_sign_in">Already Registered ? Sign In !</string>
+    <string name="app_logo">App Logo</string>
+
+</resources>

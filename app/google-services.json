@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "501098741383",
+    "project_id": "quizo-hub",
+    "storage_bucket": "quizo-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501098741383:android:5e5fa37057e225c2a14222",
+        "android_client_info": {
+          "package_name": "com.devcomm.quizohub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501098741383-vqm0aopjerlo0vog4o636l29jb3g8trv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devcomm.quizohub",
+            "certificate_hash": "110b29648132774a9c0986e45a12779511ad452b"
+          }
+        },
+        {
+          "client_id": "501098741383-dhsun6v14egemcmqp414v98pamhof63o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUz6kHIu18nNcyfzsbHccdhtGgG8F6buo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501098741383-dhsun6v14egemcmqp414v98pamhof63o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
