@@ -3,14 +3,13 @@ package com.devcomm.quizohub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import android.widget.Toast
 import com.devcomm.quizohub.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {
 
-    lateinit var haveAccountSignIn: TextView
+//    lateinit var haveAccountSignIn: TextView
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -25,9 +24,9 @@ class SignUpActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         // Setting if user have account then go back to signIn Page other alternative is present below
-//        binding.txtSignInIfRegistered.setOnClickListener {
-//            startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
-//        }
+        binding.txtSignInIfRegistered.setOnClickListener {
+            startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+        }
 
         // binding buttons with click
         binding.btnSignUp.setOnClickListener {
@@ -58,13 +57,13 @@ class SignUpActivity : AppCompatActivity() {
         }
 
 //         Alternative and shortcut of this code is written already in above line using binding.
-        // Setting View of Text
-        haveAccountSignIn = findViewById(R.id.txtSignInIfRegistered)
-        // Adding click on text to signIn if user have an account.
-        haveAccountSignIn.setOnClickListener{
-            startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
-            finish()
-        }
+//        // Setting View of Text
+//        haveAccountSignIn = findViewById(R.id.txtSignInIfRegistered)
+//        // Adding click on text to signIn if user have an account.
+//        haveAccountSignIn.setOnClickListener{
+//            startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+//            finish()
+//        }
 
     }
 

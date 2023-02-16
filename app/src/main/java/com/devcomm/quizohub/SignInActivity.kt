@@ -3,7 +3,6 @@ package com.devcomm.quizohub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import android.widget.Toast
 import com.devcomm.quizohub.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -12,7 +11,7 @@ class SignInActivity : AppCompatActivity() {
 
     lateinit var binding: ActivitySignInBinding
     lateinit var firebaseAuth: FirebaseAuth
-    lateinit var newSignUp: TextView
+//    lateinit var newSignUp: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +24,9 @@ class SignInActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         // If user don't have account then redirecting him to register. other  alternative is below
-//        binding.txtSignUpIfNotRegistered.setOnClickListener{
-//            startActivity(Intent(this, SignUpActivity::class.java))
-//        }
+        binding.txtSignUpIfNotRegistered.setOnClickListener{
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
 
         //Adding click through binding
         binding.btnSignIn.setOnClickListener{
@@ -55,11 +54,11 @@ class SignInActivity : AppCompatActivity() {
         }
 
         // if user don't have account then click on it to create one
-        newSignUp = findViewById(R.id.txtSignUpIfNotRegistered)
-        newSignUp.setOnClickListener{
-            startActivity(Intent(this, SignUpActivity::class.java))
-            finish()
-        }
+//        newSignUp = findViewById(R.id.txtSignUpIfNotRegistered)
+//        newSignUp.setOnClickListener{
+//            startActivity(Intent(this, SignUpActivity::class.java))
+//            finish()
+//        }
     }
 
     override fun onStart() {
